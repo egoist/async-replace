@@ -1,6 +1,6 @@
 {
   "name": "@egoist/async-replace",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Like String.prototype.replace but supports asynchronous replacer.",
   "repository": {
     "url": "egoist/async-replace",
