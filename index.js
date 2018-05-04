@@ -4,7 +4,7 @@
  * @param {string} str
  * @param {RegExp} re
  * @param {(substring: string, ...args: any[]) => string | Promise<string>} replacer
- * @returns {string | Promise<string>}
+ * @returns {Promise<string>}
  */
 module.exports = (str, re, replacer) => {
   return Promise.resolve().then(() => {
