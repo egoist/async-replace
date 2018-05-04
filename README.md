@@ -25,14 +25,14 @@ const newString = replace('[foo] [bar]', /\[(.*?)\]/g, async (_, p1) => {
 
 ## API
 
-### replace(str, RE, replacer)
+### replace(str, regexp, replacer)
 
 #### str
 
 - __Type__: `string`
 - __Required__: `true`
 
-#### RE
+#### regexp
 
 - __Type__: `RegExp`
 - __Required__: `true`
