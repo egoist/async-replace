@@ -16,11 +16,13 @@ yarn add @egoist/async-replace
 ```js
 const replace = require('@egoist/async-replace')
 
-const newString = replace('[foo] [bar]', /\[(.*?)\]/g, async (_, p1) => {
+replace('[foo] [bar]', /\[(.*?)\]/g, async (_, p1) => {
   await sleep(300)
   return `hi ${p1}`
+}).then(str => {
+  console.log(str)
+  //=> 'hi foo hi bar'
 })
-//=> 'hi foo hi bar'
 ```
 
 ## API
